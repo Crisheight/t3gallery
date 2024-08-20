@@ -21,12 +21,14 @@ export default function HomePage() {
     <main className="">
         <div className="flex flex-wrap gap-4 justify-center">{
             mockImages.map((image) => (
-                <div key={image.id} className="max-w-lg">
+                <div key={image.id} className="max-w-sm">
                     <img src={image.url} alt="A list of placeholder images in a row"/>
                 </div>
             ))}
         </div>
-      Hello (gallery in progress)
+        <div className="flex justify-center m-3">
+            <h1>Gallery in progress</h1>
+        </div>
     </main>
   );
 }
