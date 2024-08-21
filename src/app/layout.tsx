@@ -16,8 +16,10 @@ export const metadata = {
 
 function TopNav() {
     return (
-        <nav className="flex w-full justify-between items-center">
+        <nav className="flex w-full justify-between items-center p-4 text-xl
+        font-semibold">
           <div>Gallery</div>
+          <div>Sign In</div>
         </nav>
     );
 }
@@ -29,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className={`font-sans ${inter.variable} flex flex-col gap-4`}>
         <TopNav />
         {children}
       </body>
