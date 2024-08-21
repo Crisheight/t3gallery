@@ -11,7 +11,7 @@ You can support Theo here: https://www.youtube.com/@t3dotgg
 ## TODO
 
 - [x] Make it deploy (vercel)
-- [ ] Fix image sizing (tailwind)
+- [x] Fix image sizing (tailwind)
 - [ ] Scaffold basic UI with mock data
 - [ ] Set up a database (vercel postgres)
 - [ ] Attach DB to UI
