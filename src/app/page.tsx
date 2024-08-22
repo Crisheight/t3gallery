@@ -2,14 +2,14 @@ import Link from "next/link";
 import {db} from "~/server/db";
 
 const mockURLs = [
-        "https://utfs.io/f/e7a60857-f6a2-4fa5-98a2-466f46584eae-8rzqre.jpg",
-        "https://utfs.io/f/35750b94-d30f-4fd2-a4cf-ac72ca9c63fd-ano2y8.jpg",
-        "https://utfs.io/f/c55f7fbf-c6ef-461d-a72d-88dce5c59f06-9vpytx.jpg",
-        "https://utfs.io/f/d1ef1af3-6f1d-444e-975f-b9ba430e91d2-go0vx7.jpg",
-        "https://utfs.io/f/f41e88be-d364-4c68-94ab-1e05fda25ff4-3jjx2a.jpg",
-        "https://utfs.io/f/6b472fd9-2671-431c-bbf9-2901ff71f1c6-mlgcxg.jpg",
-        "https://utfs.io/f/dbf773cc-2210-47ef-97df-f38e0f8b43c7-y1qd9s.jpg",
-        "https://utfs.io/f/40e55783-093e-491d-baef-ea51706a7b26-pgk2iv.jpg",
+        "https://utfs.io/f/ee56d692-be94-4e58-9f87-498c8c0ffcae-j3soqn.jpg",
+        "https://utfs.io/f/46ac12f9-78e0-4146-ab79-7ff48c40802d-d36jv.jpg",
+        "https://utfs.io/f/3e45600d-83b6-4659-a66c-46b0824c8c91-z48gyu.jpg",
+        "https://utfs.io/f/60380cd8-c8d3-4d24-840b-76f703ed1580-x1x71m.jpg",
+        "https://utfs.io/f/d1dfcd2c-8eb1-413f-9fc0-a5fe22f8cd65-a5dl21.jpg",
+        "https://utfs.io/f/ebb06af7-1813-46f4-9541-3a8d98b4530e-p57s6x.jpg",
+        "https://utfs.io/f/ce2bf36f-b262-470f-bdab-c84a9865c9cf-hbxnit.jpg",
+        "https://utfs.io/f/c3d40516-1084-4933-b386-b9c137774d5b-c44zw4.jpg",
     ];
 
 const mockImages = mockURLs.map((url, index) => ({
