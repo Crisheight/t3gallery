@@ -13,7 +13,7 @@ You can support Theo here: https://www.youtube.com/@t3dotgg
 - [x] Make it deploy (vercel)
 - [x] Fix image sizing (tailwind)
 - [x] Scaffold basic UI with mock data
-- [ ] Set up a database (vercel postgres)
+- [x] Set up a database (vercel postgres)
 - [ ] Attach DB to UI
 - [ ] Add authentication (w/ clerk)
 - [ ] Add image upload
