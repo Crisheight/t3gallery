@@ -14,13 +14,11 @@ export default async function HomePage() {
             <div className="flex flex-wrap gap-4 justify-center">
 
                 { images.map((image) => (
-                    <div key={image.id} className="max-w-sm">
+                    <div key={image.id} className="flex flex-col max-w-sm">
                         <img src={image.url} alt="A list of streetphotography images in a row"/>
+                        <div>{image.name}</div>
                     </div>
                 ))}
-            </div>
-            <div className="flex justify-center m-3">
-                <h1>Gallery in progress</h1>
             </div>
         </main>
     );
