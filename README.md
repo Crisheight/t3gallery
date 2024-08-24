@@ -14,7 +14,7 @@ You can support Theo here: https://www.youtube.com/@t3dotgg
 - [x] Fix image sizing (tailwind)
 - [x] Scaffold basic UI with mock data
 - [x] Set up a database (vercel postgres)
-- [ ] Attach DB to UI
+- [x] Attach DB to UI
 - [ ] Add authentication (w/ clerk)
 - [ ] Add image upload
 - [ ] Error handling (w/ sentry)
