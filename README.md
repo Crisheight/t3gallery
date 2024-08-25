@@ -15,7 +15,7 @@ You can support Theo here: https://www.youtube.com/@t3dotgg
 - [x] Scaffold basic UI with mock data
 - [x] Set up a database (vercel postgres)
 - [x] Attach DB to UI
-- [ ] Add authentication (w/ clerk)
+- [x] Add authentication (w/ clerk)
 - [ ] Add image upload
 - [ ] Error handling (w/ sentry)
 - [ ] Routing/image page (parallel route)
