@@ -2,11 +2,9 @@
 
 ## READ:
 
-I am following a tutorial by Theo on how to create a basic application using the T3 stack
+App is deployed with Vercel here: https://t3gallery-jziakctsm-crisheights-projects.vercel.app/
 
-to get a feel for how it works.
-
-You can support Theo here: https://www.youtube.com/@t3dotgg
+Guide provided by Theo here: https://www.youtube.com/@t3dotgg
 
 ## TODO
 
