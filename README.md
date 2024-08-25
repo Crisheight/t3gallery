@@ -4,7 +4,7 @@
 
 App is deployed with Vercel here: https://t3gallery-jziakctsm-crisheights-projects.vercel.app/
 
-Guide provided by Theo here: https://www.youtube.com/@t3dotgg
+Guide provided by Theo at: https://www.youtube.com/@t3dotgg
 
 ## TODO
 
