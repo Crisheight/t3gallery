@@ -1,5 +1,6 @@
 import { ClerkProvider } from '@clerk/nextjs'
 import "~/styles/globals.css";
+import "@uploadthing/react/styles.css";
 import React from "react";
 import { Inter } from "next/font/google";
 import { TopNav } from "~/app/_components/topnav";
