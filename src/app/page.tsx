@@ -30,7 +30,7 @@ export default async function HomePage() {
 
             <SignedOut>
                 <div className="w-full h-full text-2xl text-center mb-3">
-                    Sign in to view personalized gallery
+                    Sign in to upload photos
                 </div>
 
                 <div>
