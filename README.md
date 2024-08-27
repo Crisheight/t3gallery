@@ -14,7 +14,7 @@ Guide provided by Theo at: https://www.youtube.com/@t3dotgg
 - [x] Set up a database (vercel postgres)
 - [x] Attach DB to UI
 - [x] Add authentication (w/ clerk)
-- [ ] Add image upload
+- [x] Add image upload
 - [ ] Error handling (w/ sentry)
 - [ ] Routing/image page (parallel route)
 - [ ] Delete button (w/ server actions)
