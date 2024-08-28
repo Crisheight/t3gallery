@@ -14,7 +14,7 @@ export default async function HomePage() {
             <div className="flex flex-wrap gap-4 justify-center">
 
                 { images.map((image) => (
-                    <div key={image.id} className="flex flex-col max-w-sm">
+                    <div key={image.id} className="flex flex-col max-w-xs">
                         <img src={image.url} alt="A list of streetphotography images in a row"/>
                         <div>{image.name}</div>
                     </div>
