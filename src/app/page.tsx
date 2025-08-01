@@ -1,20 +1,42 @@
-import {db} from "~/server/db";
 import {SignedIn, SignedOut} from "@clerk/nextjs";
+import {GetUserImages} from "~/server/queries";
+import {GetDefaultImages} from "~/server/queries";
+import Image from "next/image";
 
 export const dynamic = "force-dynamic";
 
-async function Images() {
-    const images = await db.query.images.findMany({
-        orderBy: (model, {desc}) => desc(model.id),
-    });
+async function DefaultImages() {
+    const images = await GetDefaultImages();
 
     return (
         <div className="flex flex-wrap gap-4 justify-center">
             {images.map((image) => (
                 <div key={image.id} className="flex flex-col max-w-xs">
-                    <img
+                    <Image
                         src={image.url}
-                        alt="A list of streetphotography images in a row"
+                        alt={image.name}
+                        width={400}
+                        height={300}
+                    />
+                    <div>{image.name}</div>
+                </div>
+            ))}
+        </div>
+    )
+}
+
+async function UserImages() {
+    const images = await GetUserImages();
+
+    return (
+        <div className="flex flex-wrap gap-4 justify-center">
+            {images.map((image) => (
+                <div key={image.id} className="flex flex-col max-w-xs">
+                    <Image
+                        src={image.url}
+                        alt={image.name}
+                        width={400}
+                        height={300}
                     />
                     <div>{image.name}</div>
                 </div>
@@ -33,13 +55,11 @@ export default async function HomePage() {
                     Sign in to upload photos
                 </div>
 
-                <div>
-                    <Images />
-                </div>
+                <DefaultImages />
             </SignedOut>
 
             <SignedIn>
-                <Images />
+                <UserImages />
             </SignedIn>
 
         </main>
