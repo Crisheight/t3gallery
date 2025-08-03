@@ -15,7 +15,7 @@ Guide provided by Theo at: https://www.youtube.com/@t3dotgg
 - [x] Attach DB to UI
 - [x] Add authentication (w/ clerk)
 - [x] Add image upload
-- [ ] Error handling (w/ sentry)
+- [x] Error handling (w/ sentry)
 - [ ] Routing/image page (parallel route)
 - [ ] Delete button (w/ server actions)
 - [ ] Analytics (posthog)
