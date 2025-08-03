@@ -1,13 +1,13 @@
 import {SignedIn, SignedOut} from "@clerk/nextjs";
-import {GetUserImages} from "~/server/queries";
-import {GetDefaultImages} from "~/server/queries";
+import {getUserImages} from "~/server/queries";
+import {getDefaultImages} from "~/server/queries";
 import Image from "next/image";
 import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
 async function DefaultImages() {
-    const images = await GetDefaultImages();
+    const images = await getDefaultImages();
 
     return (
         <div className="flex flex-wrap justify-center gap-4">
@@ -30,7 +30,7 @@ async function DefaultImages() {
 }
 
 async function UserImages() {
-    const images = await GetUserImages();
+    const images = await getUserImages();
 
     return (
         <div className="flex flex-wrap justify-center gap-4">
