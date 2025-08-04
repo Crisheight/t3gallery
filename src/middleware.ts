@@ -1,6 +1,17 @@
-import { clerkMiddleware } from '@clerk/nextjs/server';
+// src/middleware.ts
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 
-export default clerkMiddleware();
+const isPublicRoute = createRouteMatcher([
+    '/',
+    '/photos/(.*)',
+]);
+
+export default clerkMiddleware((auth, req) => {
+    if (isPublicRoute(req)) {
+        return; // Allow public routes to be accessed
+    }
+    auth().protect(); // Protect all other routes
+});
 
 export const config = {
     matcher: [
