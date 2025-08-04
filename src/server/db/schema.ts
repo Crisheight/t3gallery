@@ -8,6 +8,7 @@ import {
   serial,
   timestamp,
   varchar,
+  boolean
 } from "drizzle-orm/pg-core";
 
 /**
@@ -28,6 +29,7 @@ export const images = createTable(
         .notNull(),
     userId: varchar("user_id", { length: 256 })
         .notNull(),
+    isPublic: boolean("is_public").default(false).notNull(),
     createdAt: timestamp("created_at", { withTimezone: true })
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
