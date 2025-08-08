@@ -1,5 +1,6 @@
 import { Modal } from "./modal";
 import {getImageById} from "~/server/queries";
+import Image from "next/image";
 
 export default async function PhotoModal({
                                              params,
@@ -17,7 +18,11 @@ export default async function PhotoModal({
 
     return (
         <Modal>
-            <img src={idImage.url} className="w-96" alt={idImage.name} />
+            <Image
+                src={idImage.url}
+                width={92}
+                height={69}
+                alt={idImage.name} />
         </Modal>
     );
 }
