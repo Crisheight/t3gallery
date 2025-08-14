@@ -25,8 +25,6 @@ export function Modal({ children }: { children: React.ReactNode }) {
             className="
                 fixed inset-0
                 m-0 p-0 border-0
-                w-[100dvw] h-[100dvh]
-                max-w-none max-h-none
                 overflow-hidden
                 bg-transparent
                 text-white
