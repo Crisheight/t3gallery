@@ -14,7 +14,7 @@ export default async function FullPageImage(props: { photoId: number }) {
                 <Image
                     src={idImage.url}
                     alt={idImage.name}
-                    priority={true}
+                    priority
                     fill
                     className="object-contain object-left"
                     sizes="100%"
