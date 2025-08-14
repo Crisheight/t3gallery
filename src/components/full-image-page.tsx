@@ -9,19 +9,19 @@ export default async function FullPageImage(props: { photoId: number }) {
     const idImage = await getImageById(props.photoId);
 
     return (
-        <div className="flex w-full min-h-screen items-stretch bg-green-500">
-            <div className="flex-1">
+        <div className="flex w-[100dvw] h-[100dvh] items-stretch bg-green-500 overflow-hidden">
+            <div className="flex-1 overflow-hidden">
                 <Image
                     src={idImage.url}
                     alt={idImage.name}
                     priority={true}
                     width={1000}
                     height={1000}
-                    style={{ width: "65%" , height: "auto"}}
-                    className="flex-shrink"
+                    className="block h-auto w-[65%]"
+                    style={{ objectFit: "contain" }}
                 />
             </div>
-            <div className="flex flex-col flex-shrink-0 w-48">
+            <div className="flex flex-col flex-shrink-0 w-48 p-4">
                 <div className="text-xl font-bold">{idImage.name}</div>
             </div>
         </div>
