@@ -14,13 +14,13 @@ async function DefaultImages() {
             {images.map((image) => (
                 <div key={image.id} className="flex max-w-xs flex-col">
                     <Link href={`/photos/${image.id}`}>
-                    <Image
-                        src={image.url}
-                        style={{objectFit: "contain"}}
-                        width={240}
-                        height={240}
-                        alt={image.name}
-                    />
+                        <Image
+                            src={image.url}
+                            style={{objectFit: "contain"}}
+                            width={240}
+                            height={240}
+                            alt={image.name}
+                        />
                     </Link>
                     <div>{image.name}</div>
                 </div>
