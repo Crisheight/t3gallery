@@ -29,6 +29,7 @@ export function Modal({ children }: { children: React.ReactNode }) {
                 max-w-none max-h-none
                 overflow-hidden
                 bg-transparent
+                text-white
                 backdrop:bg-zinc-900/50
             "
         >
