@@ -9,8 +9,8 @@ export default async function FullPageImage(props: { photoId: number }) {
     const idImage = await getImageById(props.photoId);
 
     return (
-        <div className="flex w-full h-full min-w-0 bg-green-500">
-            <div className="flex-shrink">
+        <div className="flex w-full min-h-screen items-stretch bg-green-500">
+            <div className="flex-1">
                 <Image
                     src={idImage.url}
                     alt={idImage.name}
@@ -21,7 +21,7 @@ export default async function FullPageImage(props: { photoId: number }) {
                     className="flex-shrink"
                 />
             </div>
-            <div className="flex flex-col flex-shrink-0w-48">
+            <div className="flex flex-col flex-shrink-0 w-48">
                 <div className="text-xl font-bold">{idImage.name}</div>
             </div>
         </div>
