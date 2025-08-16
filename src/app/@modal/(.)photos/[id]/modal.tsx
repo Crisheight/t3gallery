@@ -29,10 +29,10 @@ export function Modal({ children }: { children: React.ReactNode }) {
                 bg-transparent
                 text-white
                 backdrop:bg-zinc-900/50
+                pt-16
             "
         >
             {children}
-            {/*<button onClick={onDismiss} className="close-button"/>*/}
         </dialog>,
         document.getElementById('modal-root')!,
     );
