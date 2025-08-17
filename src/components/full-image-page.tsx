@@ -20,7 +20,7 @@ export default async function FullPageImage(props: { photoId: number }) {
                     sizes="(max-width: 1024px) 90vw, 70vw"
                 />
             </div>
-            <div className="w-72 p-4 min-w-0 border-l border-white/10 overflow-auto">
+            <div className="w-72 min-w-0 border-l border-white/10 overflow-auto">
                 <div className="text-xl font-bold">{idImage.name}</div>
             </div>
         </div>
