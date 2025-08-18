@@ -41,8 +41,13 @@ export default async function FullPageImage(props: { photoId: number }) {
                 <div className="text-lg text-center border-b p-2">{image.name}</div>
 
                 <div className="flex flex-col p-2">
-                    <span>Uploaded By:</span>
-                    <span>{uploaderName}</span>
+                    <span>Uploaded By</span>
+                    <span className="italic">{uploaderName}</span>
+                </div>
+
+                <div className="flex flex-col p-2">
+                    <span>Created On</span>
+                    <span className="italic">{new Date(image.createdAt).toLocaleDateString()}</span>
                 </div>
             </div>
         </div>
