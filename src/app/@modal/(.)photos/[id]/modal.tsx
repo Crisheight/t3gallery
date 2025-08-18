@@ -24,12 +24,12 @@ export function Modal({ children }: { children: React.ReactNode }) {
             onClose={onDismiss}
             className="
                 fixed inset-0
-                m-0 p-0 border-0
+                m-0 border-0
+                pt-36 pl-1
                 overflow-hidden
                 bg-transparent
                 text-white
                 backdrop:bg-zinc-900/50
-                pt-36
             "
         >
             {children}
