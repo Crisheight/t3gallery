@@ -11,7 +11,7 @@ async function DefaultImages() {
 
     return (
         <div className="flex flex-wrap justify-center gap-4 p-4">
-            {[...images, ...images, ...images].map((image) => (
+            {images.map((image) => (
                 <div key={image.id} className="flex max-w-xs flex-col">
                     <Link href={`/photos/${image.id}`}>
                         <Image
