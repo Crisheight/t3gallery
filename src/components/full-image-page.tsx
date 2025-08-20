@@ -26,7 +26,14 @@ export default async function FullPageImage(props: { photoId: number }) {
     }
 
     return (
-        <div className="flex h-[80vh] w-[90vw] max-w-[1200px] overflow-hidden rounded-lg bg-black/80">
+        <div className="
+                        flex h-[80vh] w-[90vw] max-w-[1200px]
+                        overflow-hidden
+                        rounded-lg
+                        bg-black/80
+                        p-2
+                        "
+        >
             <div className="relative h-full flex-1 min-w-0">
                 <Image
                     src={image.url}
